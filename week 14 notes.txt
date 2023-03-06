@@ -1,0 +1,17 @@
+Polymorphism
+
+public class Polymorphism{
+	public static void main(String[] args) {
+		BankAccount rich = new BankAccount(1000000);
+		System.out.println(rich);
+
+
+		SavingsAccount savings = new SavingsAccount(7000, 0.02);
+		savings.earnInterest();
+		System.out.println(savings);
+
+		System.out.println(rich instanceof BankAccount);
+		System.out.println(savings instanceof SavingsAccount);
+		System.out.println(rich instanceof BankAccount);
+	}
+}

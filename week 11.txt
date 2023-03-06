@@ -1,0 +1,52 @@
+week 11
+*first week of Feb we'll sort things
+Address Book
+ArrayList <Entry>
+		1|>first/last name
+		2|>address-# street, zip, state etc make object
+		3|>phone# -String
+		4|>email-String
+		5|>birthday
+		6|>connection-String
+Person would have:
+1,2,3,4 & 5
+
+-get all connections(specific)
+-sort things*
+-add an entry
+-remove entry?
+-update entry
+-display()
+
+		Book
+	----------------
+	|  list<Entry>  |
+	|		    |
+	|		    |
+	|		    |
+	----------------
+	/		"has-a"
+Entry:		top-down:alot of place holders
+person		bottom up
+Address
+connection
+
+person:		address:
+name			#
+DOB			street
+# Email		zip, state
+
+Person:
+-first
+-last
+-dob
+-email
+-phone#
+
+constructors:
+1. all parameters
+2.only name + #
+	-sets dob and email to "unknown"
+3.one additional of your choosing
+
+in the oop project, make a person class with the given properties and the 3 constructors then make 3 people

@@ -1,0 +1,14 @@
+delimiter(separator)<-thing that cuts up data
+
+a#b#c#d#e
+to get access to letters use split
+String[] data = patern.split("#");
+now data hass an array
+=> {a,b,c,d,e};
+
+firstLetter = data[0]
+secondLetter = data[1]
+etc
+
+UML:
+underlined is static

@@ -1,0 +1,302 @@
+Kenzie Academy w2d1 Jose Rodriguez
+~~
+CONCATENATION
+Strings can be combined using the + operator. This is called concatenating strings.
+Concatenation adds individual strings together to make a new string.
+
+"Hello" + " " + "World!"
+// produces "Hello World!"
+// Notice that the " " adds a space character.
+You can also concatenate numbers into strings.
+
+"I have " + 2 + " apples."
+// This produces "I have 2 apples."
+// Notice the extra spaces, one after "have" and one before "apples."
+// Without the extra spaces, our final string would be "I have2apples."
+~~
+ An escape character tells the computer
+"Hey! This double quote character should be inside the string" in a process called escaping.
+To escape a double-quote character, we use the special backslash \ character.
+In the example below, you see that I used the backslash to include the double-quotes within my string.
+
+"Claire looked around the kitchen. \"I absolutely love coffee and cats!\" said Claire"
+This will output Claire looked around the kitchen. "I absolutely love coffee and cats!" said Claire.
+
+The backslash tells the Java compiler to ignore the special meaning of the character after it.
+You can do this with many special characters.
+What about if you want to put the backslash character in your text? You escape it!
+
+"The backslash character looks like \\"
+This will output a string that looks like The backslash character looks like \.
+The first backslash character escapes the second, so a single backslash is left in the string.
+
+Some examples of special characters you can escape with a slash
+: \n creates a newline, \t creates a tab
+~~
+Note: Everything between the quotes is part of the same string -- putting spaces
+inside a string does not break a sequence into multiple strings.
+~~
+OPERATORS
+Assignment Operators
+The addition assignment operator, +=, both adds the numbers together and also
+assigns the resulting value to the left-side variable.
+
+Example: Two operations at once
+
+    // Both of these lines do the same thing
+    // This is the "longhand"
+
+    number = number + 4;
+ 
+    // This is the shortcut
+
+    num += 4
+
+Example: Assignment Operators
+
+    int num = 1;
+    num += 4
+    // num is now 5
+    num -= 2
+    // num is now 3
+    num *= 3
+    // num is now 9
+
+The subtraction assignment operator is -=. In a similar manner to the addition assignment
+operator, the subtraction assignment operator subtracts the right-side number from the
+left-side number, and then assigns the resulting value to the left-side variable. For example,
+if	   y = 10
+then 	   y -= 2
+will subtract 2 from y to get 8.
+	   y = 8
+Then, y will be reassigned the value 8.
+
+Increment and Decrementing
+There are special operators for variables that can be used to increment or decrement a variable.
+To increment a value means to increase its value by 1, and to decrement means to decrease its value by one.
+
+++ and -- are the increment and decrement operators.
+
+int x = 5;
+x++;
+// Now x is 6.  It was incremented
+x--;
+// Now x is 5 again. It was decremented
+It is important to note that the ++ and -- operators actually assign a new value to the variable!
+
+The equivalent statement to these would be
+
+int x = 5;
+x = x + 1; // Same as x++
+x = x - 1; // Same as x--
+
+Another Operator, Remainder
+The remainder operator (also called Modulus, mod, modulo, etc..) is a unique concept to programming.
+The remainder operator is represented by the percent sign, %. This is similar to division, but it
+only returns the remainder.
+
+For example: 10 divided by 3.
+This of this kind of like long-division.
+10 / 3
+Produces 3.333334, which is not an integer value. This tells us that 10 is not evenly divisible by 3.
+The next closest divisible denominator is 
+9, because 3 * 3 = 9
+Which means there is a remainder of
+1 between 10 / 3 and 9
+Modulo only returns the remainder, so
+10 % 3 is 1
+This is frequently pronounced as “TEN MOD THREE”
+Another way to think of this, imagine you have a pizza which has 10 slices and there are 3 people.
+How many slices does everyone get? And how many are leftover?
+Well, 10 / 3 is 3 so everyone gets 3 even slices.
+That’s 9 slices eaten. So how many are leftover?
+10 % 3 is 1 so there is one slice leftover.
+A few more examples:
+9 % 3
+// This returns 0, since 9 is evenly divisible by 3
+6 % 4
+// This returns 2 since there are 2 leftover after dividing out a single 4
+13 % 4
+// This returns 1, since 13 / 4 = 3, with a remainder of 1.
+So what is the remainder operator useful for?
+
+1. Checking if a number is even
+
+Given a number, if you do number % 2
+This will return 0 if it’s even, and 1 if it’s odd.
+So,
+number % 2 equal to 0 means the number is even.
+number % 2 equal to 1 means the number is odd.
+
+2. Getting the lowest digit of a large number Given a number, if you do number % 10
+this will return the lowest digit of the number.
+
+For example:
+512 % 10 = 2
+1024 % 10 = 4
+123 % 10 = 3
+
+3. Checking if a number is divisible by another number.
+
+Doing number % 2 is essentially the same as checking if a number is divisible by two.
+Something is even if it is divisible by two.
+But a number can be divisible by something other than two.
+What about being divisible by 5?
+
+50 % 5 is 0
+If the remainder of a % b is 0, then the first number, a, is divisible by the second number, b.
+Otherwise, if the remainder is not zero, then the first number is NOT divisible by the second number.
+
+String literals can also use the inequality operator !=
+
+"Hello" != "Hello"
+// false
+"Hello" != "World"
+// true
+``` -->
+Note that strings are **case-sensitive.**
+This means that `"HELLO"` is not equal to `"hello"`
+```java
+String greeting = "HELLO!";
+greeting.equals("hello!");
+// false
+
+Comparing Strings with .equals()
+When using literals, the == operator will work, but when you start using variables
+and creating new String objects and setting the values, the == operator can have
+unintended results. With Strings, to ensure that you are always doing a value
+comparison, use the .equals() method instead.
+
+String fruit1 = new String("Apple");
+String fruit2 = new String("Apple");
+String fruit3 = new String("Banana");
+// equals comparison
+fruit1.equals(fruit2)
+//true
+// Not equals comparison
+!(fruit1.equals(fruit3))
+//true
+~~
+NUMBERS
+Numbers can be negative and have decimal points. However, these numbers are not all
+the same data type! The first 3 lines are all integers (int). Integers are positive or
+negative whole numbers. The last two lines are not whole numbers (have decimals)
+and are represented as a double. A good rule of thumb to remember is that int should be
+used for counting and double should be use for measurements.
+~~
+LITERALS
+Literals are considered so until the outcome
+ex: System.out.println(2+2)//<- The 2's are literal
+output: 4 //<- The outcome(4) is not a literal
+A literal is a value that can be used directly by the computer. In the pickle
+example, 4 and 5 are literals. They are values written directly as numbers. The character 'c'
+is a literal. The word "banana" is a literal. A good rule of thumb is "am I typing out a number
+or word by hand?" If so, you're probably using a literal.
+~~
+The order, from least accurate to most accurate, roughly goes byte -> short -> int -> long -> float -> double.
+
+// Decimal gets *truncated*
+// int / int
+10 / 3          results in 3
+// double / double
+10.0 / 3.0      results in 3.3333333333334
+// Most precise "wins" (a double is more precise than an int)
+// double / int
+10.0 / 3        results in 3.3333333333334
+~~
+A variable has three parts: a data type, a name, and a value.
+
+int myVariableName = 42;
+~~
+Challenge - Swapping Variables
+Imagine you have two buckets in front of you. The blue bucket is filled with rocks and the green bucket is filled with sand.
+
+You want to swap the contents of the two buckets. How would you do that? You need a third, empty bucket!
+
+Dump the blue bucket into the empty third bucket.
+Dump the sand (green bucket) into the empty blue bucket.
+Finally, you can put the rocks from the third bucket into the empty green bucket.
+Blue and Green Buckets
+
+What would this look like in code?
+
+// our blue bucket
+int x = 4;
+// our green bucket
+int y = 7;
+The following example illustrates what happens in the code.
+
+Tracing code is when a programmer reads code line-by-line, paying attention to variables and values. The example will step through a single line of code when you click. Then, you can read the code and click again when you're ready.
+ex:
+1: int x = 4;
+2: int y = 7;
+3: int temp = x;
+4: x = y;
+5: y = temp;
+6: System.out.println(y);
+output: x: y: temp: output:
+1:	  4
+2:	  4  7
+3:	     7     4
+4:	  7        4
+5:	  7  4 
+6:				4
+~~
+tip calc.
+System.out.printf("The tip amount is %.2f\n The total, with tip,is %.2f", tip, total);
+runs as : The tip amount is 2.19
+(.2)tells how many decimals you want
+printf is not required but is a way to format output.
+
+https://kenzie.zoom.us/my/jaicook
+career cirricullum
+warm up 
+what is the purpose of a resume? Is to get an Interview
+interviewers only spend about 7.4 seconds scanning a resume.
+todays objective:
+-Understand flow of career curriculum
+-navigate the course in canvas
+-recognize
+~~
+Stage1: career curriculum completion
+2 grad prep & artifact polishing
+3:Career
+completing an assignment in career ciriculum is manditory
+~~
+Remember Your Why
+key resume content elements
+-Heading & contact info
+-summary
+-education
+-skills(marketable & Technical)
+-work and other experiences
+-technical projects
+key resume structual elements
+-profesional font type
+-font size consistency
+-punctuation
+-Accurate spelling and grammar
+-abbreviation of months(ex: if Sep. keep Sep. throughout entierty of resume)
+-appropriate use of verb tense(ex: email address should be profesional)
+-alignment of bullets
+-others?
+Top Resume Mistakes
+-Grammatical and formatting errors
+-Unprofessional
+~~
+Let's practice
+fragment statments 
+~~
+what so what method
+-Verb + what + secondary verb + outcome (so what) - value proposition
+~~
+Obj statment(Long elevated pitch/could have 2 sentences or longer)
+education
+tech skills
+tech proj
+work experience(5 years prior)
+
+-nav. the curriculum
+
+
+

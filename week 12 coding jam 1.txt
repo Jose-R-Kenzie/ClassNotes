@@ -1,0 +1,12 @@
+reflection question answer
+Why are some methods implemented in the Account.java file and some methods, like transferBetween(), implemented in Main.java?
+-----
+constructors don't have return types
+only setters have booleans
+classes are publice properties are private
+perameter:
+property:is encapsulated by the variable defined in private
+API's are a list of methods
+public interface and user interface
+encapsulation:by instancing a private method
+process of hiding implemantation details while hiding data

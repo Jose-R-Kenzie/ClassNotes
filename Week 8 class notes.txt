@@ -1,0 +1,37 @@
+week 8 class notes
+
+int[] arr = {7, 5, 1, 3, 8, 2};
+
+//looping directions(left to right)
+//foward vs backwards(right to left)
+
+//fowards
+for (int i = 0; i <arr.length; i++){
+	int element = arr[i];
+}
+
+//backwards
+for (int i = arr.length - 1; i >= 0; i--){
+	int element = arr[i];
+}
+//can i access an array of elements in reverse going backwards while looping forwards?
+for (int i = 0; i < arr.length; i++){
+	int element = arr[arr.length-1-i];
+}
+
+//formula: i+want = lenght-1 (ultimatly tries to calc what want is.
+//An idea to loop fowards and access elemnts going backwards is length-1-i
+
+//reverse an array ex {2, 8, 3, 1, 4, 7}
+//perform SWAP by coding(not using util)
+int temp = arr[pos1];
+arr[pos1] = arr[pos2];
+arr[pos2]=temp;
+
+//selection sort
+	//find smallest number
+	//swap it to the front
+//Cocktail Shaker Sort(looks for min and max going forwards and backwards)
+
+
+arrays

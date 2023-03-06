@@ -1,0 +1,2 @@
+why is git better?
+it provides more power than the the command line provided by Command Prompt

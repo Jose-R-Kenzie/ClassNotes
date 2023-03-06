@@ -1,0 +1,29 @@
+Fridayys class notes
+fun main() {
+    //Numbers: Bytes(8bits), Shorts(16bits), Int(32bits), Long(64bits), Float(32bit:decimal/fractions), Double(64bit:decimal/fractions)
+    //Characters - Char 
+    //Boolean(true/false:0=false 1=true)
+    //Arrays(container that holds datas/values of a single type. i.e.: strings arrays:values of strings/Int array:values of Int)
+    //fun:is a section of a code that performs a particular or singular task/reusable
+    val letter : String
+    letter = "k"
+    print(letter)
+}
+    //Kotlin has imbued data types, their are also imbued functions in kotlin found in every language.
+    //the dot(".") is an asset operator which shows a range of operations that can be done on a particular variable
+    //compiler can understand based on the values given even without defining types of var/val. it can deduce the meaning of opertations
+    //class: blueprints or templates upon which you create object instances.
+    //val is used to declare a variable. var is like generale variable and it's known a mutable variable in kotlin and can be designed
+multiple times. val is like a Final variable and it's known as immutable in kotlin and can be initialized only once.
+    //var (variable) a value that can change depending on conditions or on informations passed on to the program .
+    //camelCase is a typographical convention in which two or more words form together in a way where the first letter of each word after
+the first word is capitalized
+    //parenthesis() initializes a creation of an object instance of a class.
+    //anything that is made from a blueprint can assess every property in that class. 
+    //functions(fun) are a set of instructions bundled together to acheive a specific outcome. Functions are a good alternative to having
+repeating blocks of code in a program.
+    //Integer(Int) a data type used to represent real numbers that do not have fractional values. In a function, the operation should
+return an integer given the proper code. The returned value can be used to edit before its run.
+    //loop a block of codes that repeat. there are two types of loops, "while loops" and "for loops". While loops will repeat until a
+condition is no longer true, and for loops will repeat a certain number of times.
+    //viewGroup

@@ -1,0 +1,28 @@
+/**
+ * You can edit, run, and share this code. 
+ * play.kotlinlang.org 
+ */
+
+fun main() {
+    //val dice+Range = 1..6
+    //val randomNumber = diceRange.random()
+    //println("Random number is ${randomNumber}") 
+    
+    val firstDice = Dice()
+    //println(firstDice.sides)
+    firstDice.sides = 12
+    val diceRoll = firstDice.roll()
+    println("Your ${firstDice.sides} sided die rolled a ${diceRoll}")
+}
+
+class Dice {
+    var sides=6
+    
+    fun roll() : Int {
+        val diceRange = 1..6
+        val randomNumber = diceRange.random()
+        
+        return randomNumber
+    }
+    
+}

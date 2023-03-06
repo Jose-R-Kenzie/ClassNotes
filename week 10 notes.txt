@@ -1,0 +1,11 @@
+week 10 notes
+
+properties, characteristics, behaviors-> can do things with an object.
+strings are objects(what are the behaviors?) are typaclly methods
+using variables, methods and strings we create objects
+from single class we create objects. class defines properties charateristics of objects. when we create an objects we create values. 
+when creating a class we create the object when we create the objeacte we create the properties.
+what are some properties of books? maybe a title. Has pageses. we can make multiple object from one class.
+typically objects don't have main methods. they start with preperties:access modifyers (public/private)data type(string int double)name(title author)
+then we put in a constructor. below construcotrs we put behaviors or methods. these methods do NOT have static. we jump right into return type, method names the perameters.
+from there methods usually work the same.

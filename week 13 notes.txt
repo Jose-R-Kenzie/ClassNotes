@@ -1,0 +1,10 @@
+Goal # 1 grab all books of a particular shenre
+#2 Combine(book other) ->
+
+Book b1 - the lorax, dr. seuss, children 
+Book b2 aberham Licoln's biography, some due, non fiction, 
+b1.combine(b2)
+the lorax & Abraham Lincoln's Biography, Dr. Seuss & and some dude,
+#3 Compare two books and see if they are the same
+
+equals()

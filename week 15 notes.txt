@@ -1,0 +1,3 @@
+Week 15 notes
+
+sub class can inherit from superclass if properties are protected not private.

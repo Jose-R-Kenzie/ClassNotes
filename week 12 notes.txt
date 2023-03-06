@@ -1,0 +1,59 @@
+What would this problem do?
+
+1. int[] nums = {7, 13, 8, 5, 1, 4};
+2.
+3. int bucket = 0;
+4. 
+5. for (int x : nums){
+6. 	if(x%3 == 1){
+7.		bucket +=x;
+8.	}
+9. }
+10.
+11.System.out.println(bucket);
+12.
+
+7/3 = 2.1 so x does equal 1
+1%3 or 1/3 equals 1
+
+this problem would print 25
+
+smaller number % bigger number would always be the smaller number.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+SETS
+
+A Set can only hold unique elements.
+Sets don't have indexes.
+The only way you can access each element a for each loop is needed.
+A set is an abstract idea.
+In computer science there are multiple definitions for abstract.
+interface sets are different. you cannot make them. all sets must have the ability to know if their empty and their size.
+They're ideas that things can do.
+What we can make hash sets which uses the idea of a set.
+we can add stuff to it , clear it, know the size and how many things are in there.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+HASH MAPS
+sets, arrays, array list, etc are data structures.
+a set is a striaght line.
+Hash maps has the idea of a key/value pair. keys are like the items. values is self explanitory. it's associated with keys
+With hash maps you give it 2 data types
+Hash maps <k,v>
+ArrayList <DT>
+Hashmaps<String, Double>
+map = new hashmap<String,Double>();
+rule of thumb for hash maps: keys has to be unique
+values can be repeated or multiple values of the same thing.
+Methods:
+
+-> .put(key,value)
+
+->.get(key) takes in the value associated with the key, also returns null if key not in map
+
+->.keyset() -> returns a set of all keys.
+can then use for each loop to loop over the array
+
+->.entrySet()-> a set of all pairs (entries)
+HashMap.Entry is a data type.
+Can't use a set for values. need data structure called Collection.
+
+->.values()->gives you a collection of values.

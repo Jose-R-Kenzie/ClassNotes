@@ -1,0 +1,41 @@
+Oregon Trail HW notes
+
+how to go from hw to code? Start with objects.
+
+public class Traveler {
+	//properties
+	//name, food, isHealthy
+	
+	//constructors-two of them
+	//the job of a constructor:
+		//initialize properties
+	
+	
+	//class methods
+
+	//getter
+	public varType getVarName(){
+		return varName;
+	}
+	
+	//setters
+	public void setVarName(varType varName){
+		this.varName = varName;
+	}
+	
+	public void hunt/eat(){
+		//do the thing...
+
+		//takes a point away from food
+		food = food - 1;
+		or food--;
+		food -= 1;
+		//if the food is not zero
+		if(food > 0)
+		//if no food-> health deteriorates
+		if (food = 0){
+			isHealthy = false;
+		}
+	}
+
+}

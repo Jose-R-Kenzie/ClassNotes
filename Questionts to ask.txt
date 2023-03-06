@@ -1,0 +1,5 @@
+Questionies to ask
+do TODO's go away after completion?
+what are the numbers associated with the TODO's in the TODO tab?
+
+Learn the reserved word do for doWhile(){}

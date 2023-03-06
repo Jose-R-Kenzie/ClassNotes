@@ -1,0 +1,5 @@
+Get more in depth with the difference with abstract and 
+interface.
+In my classes for OrderSystem when is it ok to return?
+Is it ok to put a return type for a different class that 
+overrides it?

@@ -1,0 +1,47 @@
+interface -> rulebook that describes behaviors
+rule? -> statement that you must follow
+-----------------------------------------------
+		interface Safety Protocol
+rules/behaviors:(don't say how)
+	-Don't touch the stove
+		-use oven mits
+	-Stick with buddy	
+		-find a sibling/friend	
+class Human implements(or putting into effect) Safety Protocol
+
+	interfaces	  |  superclasses 
+-----------------------------------------
+no properties	  | yes properties
+only behavior ideas | provide
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Measurables
+
+public interface Measurable {
+	//methods are automatically public and abstract
+	//this means we write method
+}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+nulls
+
+1. String[] names = new String [5];
+2.names[0] = "Jose";
+3.names[1] = "Fridayy";
+4.names[4] = "";
+5.
+6.//partially populated array which means some spots have data and some spots don't
+  //spots 2, 3, 4 are null
+6.System.out.println(names[2]);//prints out null
+7.String str = names[2];
+8.System.out.println(str);//prints null
+
+  //this code will complete
+9.
+10.int bucket = 0;
+11. for (int i = 0; i < names.length; i++){
+	if (names[i] != null){ //or == the definitely not .equals
+12.	bucket += names[i].length();
+13.	}
+14.}
+15.
+16.

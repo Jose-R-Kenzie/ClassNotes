@@ -1,0 +1,111 @@
+week 7 notes
+day 1
+public static String chopPuncutation(String str)
+while (!isLetter(str.charAt(0))){//while the first charachter is NOT a letter,
+//chop it off
+str = str.substring(1);
+//we start at 1 because... i don't want position 0. it's not a letter
+}
+//can we also chop puncuation off the end?(trailing punctuation)
+//to chop off the last letter, we keep a BUT the last letter.
+//hello123 -> hello12
+//str = str.substring(0, str.length -1);
+ while (!isLetter(str.charAt(str.lenght()-1))){
+str = str.substring(0,str.length) -1);
+}
+return str;
+
+}
+/*
+chop("123hello");
+str->"23hello"
+str->"hello"
+*/
+
+
+day 2
+/*
+goal: remove any non-letter character from the beginning and end of my string
+
+1,2.3hello1,2.3 -> hello
+
+how do i remove a character? (THINK: KEEPING what i want)
+
+	from the beginning
+		str = str.substring(1);
+	from the end
+		str = str.substring(0, str.length() -1);
+	from the middle? (maybe the ith letter)
+		str=str.substring(0,i)+ str.substring(i+1);
+How do i know if something is a letter or not?
+
+	ascii table -> the capital alphabet and the lowercase alphabet
+		are together
+	char tester = str.charAt(index);
+	boolean isLowerCaseLetter = tester >= 'a' && tester <= 'z';
+	boolean isUpperCaseLetter = tester >= 'A' && tester <= 'Z';
+	*methods are more helpfull to reduce this block of code*
+the TRUE condition for continuation of the loop is when i am NOT a letter
+*/
+
+public static String removePunc(String str){
+	//remove punc from the beginning
+	while (isNOTaLetter(str.charAt(0))){//if wouldn't work here because it loops only one time
+	str=str.substring(1);
+	}
+
+
+	//hello1,2.3  -> loop does NOT run true if the ! is in the loop
+	//remove punc from the end
+	while (! isNOTaLetter(str.charAt(str.length()-1))){
+		str = str.substring(0, str.length() -1);
+	}
+	return str;
+}
+
+
+	//while(condition is true) //while loops continues the loop while the condition is true
+public static boolean isNOTaLetter(char c){
+//this method returns TRUE if c is NOT a letter
+//if c IS a letter, this method should return false
+if (c>= 'a' && c <='z'){
+	return false;
+}else if (c>='A'&& c <= 'Z'{
+	return false;
+}else {
+
+
+~~
+
+REGEX
+regex is the way to do pattern matching
+is a ray of things that we can look for things
+string test = "hello world good bye mooo-oooo-ooo-on";
+.split(" -"); //literally looks for space dash
+(" ") looks for spaces
+("-")looks for dashes
+(" -")looks for niether
+("[ -]") looks for both
+
+~~
+
+Scanner algorithm refresher 
+
+/*
+	the scanner algorithm
+	1.initialize the scanner
+	2.prompt the user
+	3.recieve user input
+*/
+//1
+Scanner scan = new Scanner(System.in);
+//2
+System.out.print/*ln*/("Some message to the user");
+//3
+String response = scan.nextLine();
+
+
+
+
+
+}	

@@ -1,0 +1,22 @@
+equals(){
+1. Reflexivity test (this == other)
+2. Non-Nullity test (other == null)
+3. Class test ( ! (other instanceof MyClass))
+4. Type Cast (make other MyClass)
+5. Logical Equality Test (me.data == other.data)
+}
+@Override
+public boolean equals(Object other){
+	if (this == other){
+		return true;
+	}
+	if (other == null){
+		return false;
+	}
+	if ( ! (other instanceof Activity)){
+		return false;
+	}
+	Activity otherActivity = (Activity) other;
+
+	return this.name.equals(otherActivity.name);
+}
